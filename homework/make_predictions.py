@@ -18,7 +18,7 @@ x = df.drop(columns=["quality"])
 
 ## Debe verificarse el run_id del modelo que se quiere cargar
 ## Se puede obtener el run_id desde la interfaz de MLflow
-logged_model = "runs:/3602b9ff2adb434abe446abf5510522c/model"
+logged_model = "runs:/9d7ef75ea5ba4ad38f0beb59d2a7a7dd/model"
 loaded_model = mlflow.pyfunc.load_model(logged_model)
 y = loaded_model.predict(x)
 
